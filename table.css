@@ -1,0 +1,29 @@
+table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Open Sans", sans-serif;
+  width: 90vw;
+  max-width: 300px;
+}
+
+table,
+th,
+td {
+  border: 2px solid;
+  font-size: 20px;
+}
+
+th {
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+td {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

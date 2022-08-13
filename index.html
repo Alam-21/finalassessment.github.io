@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alam's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400&family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html">
+        <span>Home</span>
+      </a>
+
+      <a href="./interests.html">
+        <span>Interests</span>
+      </a>
+      <a href="./expertise.html">
+        <span>Expertise</span>
+      </a>
+    </div>
+
+    <div class="main">
+      <p>
+        I declare that my assessment is wholly my own work in accordance with
+        Seneca Academic Policy. No part of this assessment has been copied
+        manually or electronically from any other source (including web sites)
+        except for the information supplied by the WEB222 instructors and / or
+        made available in this assessment for my use. I also declare that no
+        part of this assignment has been distributed to other students
+        <br /><br />Alam Mohammed
+      </p>
+
+      <iframe src="https://www.youtube.com/embed/K4TOrB7at0Y" title="Demo Background Sample Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <div class="form">
+        <form
+          name="contact"
+          id="form"
+          method="post"
+          action="https://httpbin.org/post"
+        >
+          <h2>Contact</h2>
+          <label for="fullname">Full Name : </label>
+          <input
+            class="fullname"
+            id="fullname"
+            required
+            aria-required="true"
+            type="text"
+            name="fullname"
+          />
+          <br />
+
+          <label for="email">Email : </label>
+          <input
+            class="email"
+            id="email"
+            required
+            aria-required="true"
+            type="email"
+            name="email"
+          />
+          <br />
+
+          <label for="message">Message : </label>
+          <textarea
+            name="message"
+            id="message"
+            cols="20"
+            rows="5"
+            required
+            aria-required="true"
+          ></textarea>
+          <br />
+
+          <label for="phone">Phone : </label>
+          <input
+            class="phone"
+            id="phone"
+            aria-required="true"
+            type="tel"
+            name="phone"
+          />
+          <br />
+
+          <label for="company">Company : </label>
+          <input
+            class="company"
+            id="company"
+            aria-required="true"
+            type="text"
+            name="company"
+          />
+          <br />
+
+          <label for="occupation">Occupation : </label>
+          <input
+            class="occupation"
+            id="occupation"
+            aria-required="true"
+            type="text"
+            name="occupation"
+          />
+          <br />
+
+          <div class="buttons">
+            <button type="reset" onclick="reset()">Reset</button>
+            <button type="submit" value="Submit" id="submit">Submit</button>
+          </div>
+        </form>
+
+        <div class="err"></div>
+      </div>
+    </div>
+
+    <div class="footer">Seneca College, Copyright &copy; 2022</div>
+    <script src="./contact.js"></script>
+  </body>
+</html>
+
+
